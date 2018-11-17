@@ -7,7 +7,7 @@ const Discord = require('discord.js');
 
 // Create an instance of a Discord client
 const client = new Discord.Client();
-
+prifix = 클론
 /**
  * The ready event is vital, it means that only _after_ this will your bot start reacting to information
  * received from Discord
@@ -19,7 +19,7 @@ client.on('ready', () => {
 // Create an event listener for messages
 client.on('message', message => {
   // If the message is "what is my avatar"
-  if (message.content === '클론, 아바타 보여줘') {
+  if (message.content === prefix '아바타 보여줘') {
     // Send the user's avatar URL
     message.reply(message.author.avatarURL);
   }
@@ -159,26 +159,11 @@ if(!message.guild) return;
   if (message.content === '클론, 게임추천') {
     message.reply('스팀에서 게임을 찾고 지갑을 포기하세요! ~~연쇄할인마의 습격~~');
   }
-  if (message.content === '클론, 초대링크') {
-    message.reply('https://discordapp.com/api/oauth2/authorize?client_id=509599656485847051&permissions=464896&scope=bot');
-  }
   if (message.content === '클론, 끝말잇기하자') {
     message.reply('좋아요! 제가 먼저 시작할께요! 마귀광대버섯!');
   }
   if (message.content === '클론, ㅎㅇ') {
     message.reply('오냐');
-  }
-  if (message.content === '클론, 점검일자') {
-    message.reply('정기 점검은 매주 주말 오후에 시작합니다!');
-  }
-  
-  }
-  if (message.content === '클론, 무서운거 보여줘') {
-    message.reply('https://cdn.discordapp.com/attachments/293677323021058049/500857247132418068/2018-10-03.png');
-  } 
-  if (message.content === '클론, NGEN을 제외한 클론봇들은?') {
-    message.reply('https://cdn.discordapp.com/attachments/508159591092322308/511115740192047104/2.gif');
-    message.reply('저~기 날아가는 애가 바로 저를 제외한 클론들이에요. 다들 새 행복을 찾으러 떠났어요.');
   }
   if (message.content === '클론, 핑!') {
     message.channel.send('퐁?').then(function(ping) {
